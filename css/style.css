@@ -38,16 +38,47 @@ nav {
 .profile {
   height: 70px;
   background-color: cyan;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profilepic {
+  height: 100%;
+  background-color: green;
+  width: 100px;
+}
+
+.profileoptions {
+  height: 100%;
+  background-color: black;
+  width: 150px;
 }
 
 .notifications {
   height: 80px;
-  background-color: purple
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+}
+
+.notificationsicon {
+  width: 50px;
+  height: 100%;
+  background-color: red;
+}
+
+.notificationsinfo {
+  width: 220px;
+  height: 100%;
+  background-color: brown;
 }
 
 .search {
   height: 50px;
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts {
@@ -60,6 +91,21 @@ nav {
   height: 80px;
   background-color: yellow;
   border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactpic {
+  height: 100%;
+  width: 80px;
+  background-color: cyan;
+}
+
+.contactpreview {
+  height: 100%;
+  width: 200px;
+  background-color: lightgreen;
 }
 
 /* chat */
@@ -72,14 +118,49 @@ nav {
 .chatinfo {
   height: 70px;
   background-color: pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactinfo {
+  height: 70px;
+  background-color: blue;
+  width: 30%;
+}
+
+.contactoptions {
+  height: 70px;
+  background-color: red;
+  width: 30%;
 }
 
 .conversation {
   height: calc(100% - 70px - 70px);
   background-color: orange;
+  overflow-y: scroll;
 }
 
 .sendmsg {
   height: 70px;
   background-color: blue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.emotes {
+  height: 100%;
+  width: 80px;
+  background-color: brown;
+}
+
+.sendmsg input {
+  height: 100%;
+  width: calc(100% - 160px);
+  background-color: green;
+}
+
+.mic {
+  height: 100%;
+  width: 80px;
+  background-color: darkblue;
 }
