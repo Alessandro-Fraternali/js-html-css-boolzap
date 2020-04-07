@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* sfondo */
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* blocco principale */
+main {
+  height: 95%;
+  width: 80%;
+  background-color: red;
+  display: flex;
+}
+
+/* navigazione chat */
+nav {
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.navmenu {
+  background-color: orange;
+}
+
+.profile {
+  height: 70px;
+  background-color: cyan;
+}
+
+.notifications {
+  height: 80px;
+  background-color: purple
+}
+
+.search {
+  height: 50px;
+  background-color: gray;
+}
+
+.contacts {
+  height: calc(100% - 70px - 50px - 80px) ;
+  background-color: green;
+  overflow-y: scroll;
+}
+
+.pippo {
+  height: 80px;
+  background-color: yellow;
+  border: solid 1px black;
+}
+
+/* chat */
+.chat {
+  height: 100%;
+  width: 65%;
+  background: yellow;
+}
+
+.chatinfo {
+  height: 70px;
+  background-color: pink;
+}
+
+.conversation {
+  height: calc(100% - 70px - 70px);
+  background-color: orange;
+}
+
+.sendmsg {
+  height: 70px;
+  background-color: blue;
+}
