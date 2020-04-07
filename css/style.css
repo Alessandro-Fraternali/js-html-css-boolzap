@@ -26,86 +26,158 @@ main {
 nav {
   height: 100%;
   width: 35%;
-  background-color: blue;
+  background-color: white;;
   display: flex;
   flex-direction: column;
 }
 
 .navmenu {
-  background-color: orange;
+  background-color: rgb(240, 240, 240);
 }
 
 .profile {
   height: 70px;
-  background-color: cyan;
+  background-color: rgb(230, 228, 229);
   display: flex;
   justify-content: space-between;
 }
 
 .profilepic {
   height: 100%;
-  background-color: green;
   width: 100px;
-}
-
-.profileoptions {
-  height: 100%;
-  background-color: black;
-  width: 150px;
-}
-
-.notifications {
-  height: 80px;
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-}
-
-.notificationsicon {
-  width: 50px;
-  height: 100%;
-  background-color: red;
-}
-
-.notificationsinfo {
-  width: 220px;
-  height: 100%;
-  background-color: brown;
-}
-
-.search {
-  height: 50px;
-  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.profilepic img {
+  height: 50px;
+  border-radius: 100%;
+}
+
+.profileoptions {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  color: gray;
+}
+
+.notifications {
+  height: 80px;
+  background-color: #8EDAFC;
+  display: flex;
+  justify-content: center;
+}
+
+.notificationsicon {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificationscircle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 100%;
+  color: #8EDAFC;
+}
+
+.notificationsinfo {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notificationsinfo p {
+  font-size: 18px;
+}
+
+.notificationsinfo u {
+  color: rgb(65, 65, 65);
+}
+
+.search {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search label{
+  background-color: white;
+  width: 50px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.search input {
+  height: 36px;
+  width: 320px;
+  font-size: 17px;
+}
+
 .contacts {
   height: calc(100% - 70px - 50px - 80px) ;
-  background-color: green;
   overflow-y: scroll;
 }
 
 .pippo {
   height: 80px;
-  background-color: yellow;
   border: solid 1px black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#activechat {
+  background-color: #E9EBEB;
+}
+
 .contactpic {
   height: 100%;
-  width: 80px;
-  background-color: cyan;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactpic img {
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
 }
 
 .contactpreview {
   height: 100%;
-  width: 200px;
-  background-color: lightgreen;
+  width: 270px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactpreview p {
+  color: gray;
+  font-size: 14px;
+}
+
+.contactpreview h3 {
+  font-size: 20px;
 }
 
 /* chat */
