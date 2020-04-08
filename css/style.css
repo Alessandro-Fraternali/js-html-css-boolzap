@@ -9,6 +9,10 @@ img {
   border-radius: 100%;
 }
 
+i {
+  cursor: pointer;
+}
+
 /* sfondo */
 body {
   background-image: url(../img/bg.jpg);
@@ -126,12 +130,14 @@ nav {
   justify-content: center;
   align-items: center;
   color: gray;
+  border-radius: 5px;
 }
 
 .search input {
   height: 33px;
   width: 320px;
   font-size: 17px;
+  border-radius: 4px;
 }
 
 .contacts {
@@ -141,10 +147,11 @@ nav {
 
 .pippo {
   height: 80px;
-  border: solid 1px rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(215, 215, 215);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 #activechat {
@@ -160,8 +167,8 @@ nav {
 }
 
 .contactpic img {
-  width: 65px;
-  height: 65px;
+  width: 57px;
+  height: 57px;
 }
 
 .contactpreview {
@@ -182,12 +189,13 @@ nav {
   font-size: 20px;
 }
 
-/* chat */
+/* blocco di chat */
 .chat {
   height: 100%;
   width: 65%;
 }
 
+/* header/blocco con info chat */
 .chatinfo {
   height: 70px;
   background-color: rgb(230, 228, 229);
@@ -224,12 +232,40 @@ nav {
   color: gray;
 }
 
+/* blocco conversazione e relativi baloons */
 .conversation {
   height: calc(100% - 70px - 70px);
   background-image: url(../img/sfondino.jpg);
   overflow-y: scroll;
+  padding: 5% 10%;
 }
 
+.msgreceived {
+  min-height: 70px;
+  min-width: 20%;
+  max-width: 60%;
+  padding: 15px 15px 20px 15px;
+  background-color: white;
+  float: left;
+  border-radius: 10px;
+  clear: both;
+  margin: 5px 0;
+}
+
+.msgsent  {
+  min-height: 70px;
+  min-width: 20%;
+  max-width: 60%;
+  padding: 15px 15px 20px 15px;
+  background-color: #D5F9BA;
+  float: right;
+  border-radius: 10px;
+  clear: both;
+  margin: 5px 0;
+}
+
+
+/* footer/barra di invio messaggi */
 .sendmsg {
   height: 70px;
   background-color: rgb(230, 228, 229);
@@ -256,6 +292,8 @@ nav {
 .sendmsg input {
   height: 50px;
   width: calc(100% - 160px);
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .mic {
