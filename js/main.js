@@ -21,27 +21,51 @@ $(document).ready(function(){
 
   // cliccando l'icona telegram appare un .msgsent con
   // il contenuto inserito in #typemsg
-  var msgright = $(".msgsent");
-  var msgleft = $(".msgreceived");
   var gomsg = $("#sendmsgicon");
-  var msgarea = $("#typemsg");
-  var chatbox = $(".conversation");
 
   gomsg.click(
     function() {
-    var msgready = msgarea.val();
-    chatbox.append('<div class="msgsent">'+ msgready +'</div>');
-    msgarea.val(" ");
+    // variabili interne
+    var msgright = $(".msgsent");
+    var msgleft = $(".msgreceived");
+    var msgarea = $("#typemsg");
+    var chatbox = $(".conversation");
+    var msggo = msgarea.val();
+    // stampo il contenuto inserito in #typemsg dentro un .msgsent
+    chatbox.append('<div class="msgsent">'+ msggo +'</div>');
+    // ripulisco l'input
+    msgarea.val("");
     // creazione di .msgreceived in risposta
     setTimeout(answerFunction, 1500);
     function answerFunction(){
       chatbox.append('<div class="msgreceived">Come sarebbe?</div>');
     }
+
     setTimeout(answerFunction2, 3000);
     function answerFunction2(){
       chatbox.append('<div class="msgreceived">VIIINOH!</div>');
     }
         }
   );
+
+  // ricerca tra i contatti tramite nome
+  $("#searchuser").keyup(
+    function() {
+      // salvo cosa inserito nell'input di ricerca utente
+      var seeker = $(this).val().toLowerCase();
+
+      // passo in rassegna i nomi inseriti in pippo
+      $(".pippo").each(
+        function() {
+        var friendname = $(this).find("h3").text().toLowerCase();
+
+          // confronto se seeker rientra in friendname
+          if(friendname.includes(seeker)){
+            $(this).show();
+          }else {
+            $(this).hide();
+          }
+        });
+    });
 
 });

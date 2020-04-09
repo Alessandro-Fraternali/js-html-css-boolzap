@@ -26,14 +26,14 @@ body {
 /* blocco principale */
 main {
   height: 95%;
-  width: 80%;
+  width: 1093px;
   display: flex;
 }
 
 /* navigazione chat */
 nav {
   height: 100%;
-  width: 35%;
+  width: calc(100% - 710px);
   background-color: white;;
   display: flex;
   flex-direction: column;
@@ -113,6 +113,7 @@ nav {
 
 .notificationsinfo u {
   color: rgb(65, 65, 65);
+  cursor: pointer;
 }
 
 .search {
@@ -124,20 +125,25 @@ nav {
 
 .search label{
   background-color: white;
-  width: 50px;
+  width: 40px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: gray;
-  border-radius: 5px;
 }
 
 .search input {
   height: 33px;
   width: 320px;
   font-size: 17px;
-  border-radius: 4px;
+  margin: 7px 7px 7px 0;
+  border-left: 0;
+  border-top: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+  border-radius: 0px 3px 3px 0;
+  padding-left: 10px;
 }
 
 .contacts {
@@ -154,8 +160,19 @@ nav {
   cursor: pointer;
 }
 
+.pippo:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.pippo h5{
+  align-self: flex-end;
+  font-weight: lighter;
+  color: rgb(110, 110, 110);
+  margin-right: 5px;
+}
+
 #activechat {
-  background-color: #E9EBEB;
+  background-color: rgb(220, 220, 220);
 }
 
 .contactpic {
@@ -192,7 +209,7 @@ nav {
 /* blocco di chat */
 .chat {
   height: 100%;
-  width: 65%;
+  width: 710px;
 }
 
 /* header/blocco con info chat */
